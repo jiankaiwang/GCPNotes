@@ -8,9 +8,9 @@
 
 ### API Documents
 
-*   [BigQuery (bq)](bq_api.md)
+*   [BigQuery](bq_api.md) (bq)
 *   Storage (gsutil)
-*   Google Cloud (gcloud)
+*   [Google Cloud](gcloud_api.md) (gcloud)
 *   Version
 *   Speech
 *   Translation
@@ -54,8 +54,9 @@
 The following courses are mainly related to `GCP Essentials` on qwiklabs.
 
 *   [A Tour of Qwiklabs and the Google Cloud Platform](qwiklab_gcp.md) (GSP282)
+*   [Creating a Virtual Machine](Create_VMs.md) (GSP001)
 
-
+*   [Compute Engine: Qwik Start - Windows](Create_Windows_VMs.md) (GSP093)
 
 
 
