@@ -20,6 +20,7 @@ gcloud [-h]
     list [--all]
       project
     set # set the resource configure
+    	compute/zone <zone_name>
   compute
     instances # related to VM instances
       create <instance-name> --machine-type <n1-standard-2> --zone <zone-id>
@@ -34,5 +35,10 @@ gcloud [-h]
   	remove <component_id>
   beta # you have to run `gcloud compinents install beta` first
   	interactive
+  container 
+  	clusters 
+  		create <CLUSTER-NAME> # create a cluster
+      get-credentials <CLUSTER-NAME>  		
+      delete <CLUSTER-NAME> # delete a cluster
 ```
 

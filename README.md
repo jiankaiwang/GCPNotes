@@ -57,6 +57,7 @@ The following courses are mainly related to `GCP Essentials` on qwiklabs.
 *   [Creating a Virtual Machine](Create_VMs.md) (GSP001)
 *   [Compute Engine: Qwik Start - Windows](Create_Windows_VMs.md) (GSP093)
 *   [Getting Started with Cloud Shell & gcloud](cloud_shell_gcloud.md) (GSP002)
+*   [Kubernetes Engine: Qwik Start](gke_start.md) (GSP100)
 
 
 
