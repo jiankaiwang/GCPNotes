@@ -9,8 +9,11 @@
 ### API Documents
 
 *   [BigQuery](bq_api.md) (bq)
-*   Storage (gsutil)
+*   [Storage](gsutil_api.md) (gsutil)
 *   [Google Cloud](gcloud_api.md) (gcloud)
+    *   Compute Engine (`gcloud compute`)
+    *   Pub/Sub (`gcloud pubsub`)
+    *   cloud function (`gcloud function`)
 *   Version
 *   Speech
 *   Translation
@@ -58,6 +61,7 @@ The following courses are mainly related to `GCP Essentials` on qwiklabs.
 *   [Compute Engine: Qwik Start - Windows](Create_Windows_VMs.md) (GSP093)
 *   [Getting Started with Cloud Shell & gcloud](cloud_shell_gcloud.md) (GSP002)
 *   [Kubernetes Engine: Qwik Start](gke_start.md) (GSP100)
+*   [Set Up Network and HTTP Load Balancers](network_http_balancer.md) (GSP007)
 
 
 
