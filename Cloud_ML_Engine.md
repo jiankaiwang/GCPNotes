@@ -104,7 +104,6 @@ gcloud ai-platform local train \
     --module-name trainer.task \
     --package-path trainer/ \
     --job-dir $MODEL_DIR \
-    -- \
     --train-files $TRAIN_DATA \
     --eval-files $EVAL_DATA \
     --train-steps 1000 \
@@ -226,7 +225,6 @@ gcloud ai-platform jobs submit training $JOB_NAME \
     --module-name trainer.task \
     --package-path trainer/ \
     --region $REGION \
-    -- \
     --train-files $TRAIN_DATA \
     --eval-files $EVAL_DATA \
     --train-steps 1000 \

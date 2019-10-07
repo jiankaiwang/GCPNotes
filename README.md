@@ -1,4 +1,4 @@
-# Google Cloud Platform
+# Google Cloud Platform Reference
 
 
 
@@ -14,12 +14,12 @@
     *   Compute Engine (`gcloud compute`)
     *   Pub/Sub (`gcloud pubsub`)
     *   cloud function (`gcloud function`)
-*   Version
-*   Speech
-*   Translation
-*   NAtural Language
-*   ML
-*   Video Intelligence
+*   [Vision](gvision_api.md) (Vision Annotation)
+*   [Speech](gspeech_api.md) (Speech to Text)
+*   [Translation](gtranslation_api.md) (Translation from one language to another)
+*   [Natural Language](gnl_api.md) (Classify text into categories)
+*   [ML Engine](gml_engine.md) (Deploy customized TF model.)
+*   [Video Intelligence](gvideo_API.md)
 
 
 
@@ -44,6 +44,11 @@
     *   Cloud Video Intelligence API
 *   [Cloud ML Engine: Qwik Start](Cloud_ML_Engine.md) (GSP076)
     *   Tensorflow
+
+
+
+### Big Data / Data Engineering
+
 *   [Dataprep: Qwik Start](Data_Prep.md) (GSP105)
 *   [Dataflow: Qwik Start - Templates](Data_Flow_Templates.md) (GSP192)
 *   [Dataflow: Qwik Start - Python](Data_Flow_Python.md) (GSP207)

@@ -10,7 +10,7 @@
 
 
 
-## Quick Reference
+## Quick Note
 
 ```sh
 gcloud [-h]
@@ -73,9 +73,23 @@ gcloud [-h]
 			create
 			list
 	functions # for cloud functions
-		deploy <function-name>
+		deploy <function-name> 
+			[--allow-unauthenticated \] 
+			[--stage-bucket gs://${STAGING_BUCKET_NAME} \] 
+			[--trigger-topic ${UPLOAD_NOTIFICATION_TOPIC} \] # based on specific pub/sub topic
+			[--entry-point GCStoPubsub \] 
+			[--runtime nodejs8 \]
+			[--timeout 540 \]
 		logs
 			read [--filter "GCStoPubsub"] [--limit 100]
 		delete <function-name>
+	iam 
+		service-accounts
+			create <my-account> --display-name <my-account> # create a sevice count
+			keys create <key.json> [--iam-account=my-account@$PROJECT.iam.gserviceaccount.com]
+	projects 
+		add-iam-policy-binding $PROJECT \
+			[--member=serviceAccount:my-account@$PROJECT.iam.gserviceaccount.com] \
+			[--role=roles/bigquery.admin]
 ```
 
