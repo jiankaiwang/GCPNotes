@@ -49,7 +49,16 @@
 
 ### Big Data / Data Engineering
 
+```text
+Dataprep: Data Transformation Pipeline
+   ｜
+Dataflow: Batch or Streaming Data Processing Pipeline
+   ｜
+Dataproc: Hadoop or Spark Computing Core
+```
+
 *   [Dataprep: Qwik Start](Data_Prep.md) (GSP105)
+*   [Dataprep: Creating a Data Transformation Pipeline with Cloud Dataprep](Data_Prep_Pipeline.md) (GSP430)
 *   [Dataflow: Qwik Start - Templates](Data_Flow_Templates.md) (GSP192)
 *   [Dataflow: Qwik Start - Python](Data_Flow_Python.md) (GSP207)
 *   [Dataproc: Qwik Start - Console](data_proc_console.md) (GSP103)
