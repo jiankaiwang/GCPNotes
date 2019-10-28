@@ -21,6 +21,8 @@ gcloud [-h]
       project
     set # set the resource configure
     	compute/zone <zone_name>
+    get-value # get the value of the parameter to the config 
+    	project
   compute
     instances # related to VM instances
       create <instance-name> --machine-type <n1-standard-2> --zone <zone-id>
@@ -63,6 +65,15 @@ gcloud [-h]
   	remove <component_id>
   beta # you have to run `gcloud compinents install beta` first
   	interactive
+  	iot # cloud IoT core
+  		registries 
+  			create iotlab-registry \
+   				--project=$PROJECT_ID --region=$MY_REGION \
+   				--event-notification-config=topic=projects/$PROJECT_ID/topics/iotlab
+   		devices 
+   			create temp-sensor-buenos-aires \
+          --project=$PROJECT_ID --region=$MY_REGION --registry=iotlab-registry \
+          --public-key path=rsa_cert.pem,type=rs256
   container 
   	clusters 
   		create <CLUSTER-NAME> # create a cluster
@@ -72,6 +83,10 @@ gcloud [-h]
 		topics 
 			create
 			list
+			publish <topic-name> [--attribute=data=Hello] # {"message":"","data":"Hello"}
+		subscriptions 
+			create <subscription-name> [--topic=to-kafka] [--topic-project=$PROJECT_ID]
+			pull <subscription-name> [--auto-ack] [--limit <number>]
 	functions # for cloud functions
 		deploy <function-name> 
 			[--allow-unauthenticated \] 

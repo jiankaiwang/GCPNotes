@@ -61,8 +61,11 @@ Dataproc: Hadoop or Spark Computing Core
 *   [Dataprep: Creating a Data Transformation Pipeline with Cloud Dataprep](Data_Prep_Pipeline.md) (GSP430)
 *   [Dataflow: Qwik Start - Templates](Data_Flow_Templates.md) (GSP192)
 *   [Dataflow: Qwik Start - Python](Data_Flow_Python.md) (GSP207)
+*   [Dataflow: Run a Big Data Text Processing Pipeline in Cloud Dataflow](Data_Flow_Pipeline.md) (GSP047)
 *   [Dataproc: Qwik Start - Console](data_proc_console.md) (GSP103)
 *   [Dataproc: Qwik Start - Command Line](data_proc_cli.md) (GSP104)
+*   [Cloud IoT Core: Building an IoT Analytics Pipeline on Google Cloud Platform](cloud_iot_core.md) (GSP088)
+*   [Cloud Pub/Sub: Streaming IoT Kafka to Google Cloud Pub/Sub](iot_kafka_pub_sub.md) (GSP285)
 
 
 
