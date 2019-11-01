@@ -42,7 +42,7 @@ gcloud
 				--json-instances $TEST_DATA  # the test data
 		jobs 
 			submit 
-				training $JOB_NAME \ # submit a training job to the ml engine
+				training $JOB_NAME \ # submit a training job to the ml engine (on the cloud)
     			--job-dir $OUTPUT_PATH \
           --runtime-version 1.10 \
           --module-name trainer.task \
@@ -52,10 +52,12 @@ gcloud
           --eval-files $EVAL_DATA \
           --train-steps 1000 \
           --eval-steps 100 \
-          --verbosity DEBUG
+          --verbosity DEBUG \
+          [--scale-tier=STANDARD_1|BASIC_GPU] # for distributed computing
+          [--config config.yaml] # for distributed computing requested by yaml
        	stream-logs $JOB_NAME
 		models 
-			create $MODEL_NAME --regions=$REGION
+			create $MODEL_NAME --regions=$REGION # create a model for prediction
 			list
 		versions 
 			create v1 \  # v1 is the version control you can create

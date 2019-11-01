@@ -14,18 +14,24 @@
     *   Compute Engine (`gcloud compute`)
     *   Pub/Sub (`gcloud pubsub`)
     *   cloud function (`gcloud function`)
+    *   container (`gcloud container`)
+    *   IAM (`gcloud iam`)
+    *   IoT (`gcloud beta iot`)
 *   [Vision](gvision_api.md) (Vision Annotation)
 *   [Speech](gspeech_api.md) (Speech to Text)
 *   [Translation](gtranslation_api.md) (Translation from one language to another)
 *   [Natural Language](gnl_api.md) (Classify text into categories)
-*   [ML Engine](gml_engine.md) (Deploy customized TF model.)
+*   [ML Engine](gml_engine.md) (Deploy customized TF model via `gcloud ai-platform `.)
 *   [Video Intelligence](gvideo_API.md)
+*   [Datalab](datalab_api.md) (datalab)
 
 
 
 ## Topics
 
 ### Machine Learning / Deep Learning / Artificial Intelligence
+
+* [Introduction to APIs in Google](google_api.md) (GSP294)
 
 *   [Predict Taxi Fare with a BigQuery ML Forecasting Model](Predict_Taxi_Fare.md) (GSP246)
     *   Linear Model
@@ -44,6 +50,7 @@
     *   Cloud Video Intelligence API
 *   [Cloud ML Engine: Qwik Start](Cloud_ML_Engine.md) (GSP076)
     *   Tensorflow
+*   [Predict Housing Prices with Tensorflow and AI Platform](housing_prices_tf_ai_platform.md) (GSP418)
 
 
 
@@ -66,6 +73,7 @@ Dataproc: Hadoop or Spark Computing Core
 *   [Dataproc: Qwik Start - Command Line](data_proc_cli.md) (GSP104)
 *   [Cloud IoT Core: Building an IoT Analytics Pipeline on Google Cloud Platform](cloud_iot_core.md) (GSP088)
 *   [Cloud Pub/Sub: Streaming IoT Kafka to Google Cloud Pub/Sub](iot_kafka_pub_sub.md) (GSP285)
+*   [ETL Processing on GCP Using Dataflow and BigQuery](etl_gcp_dataflow_bigquery.md) (GSP290)
 
 
 

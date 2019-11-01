@@ -15,7 +15,7 @@ export TABLE_NAME=filtered_content
 
 ```sh
 bq [--project_id ${PROJECT_ID}]
-	mk [--time_partitioning_field timestamp] \
+	mk [--time_partitioning_field timestamp] \  # create a dataset
     [--schema ride_id:string,point_idx:integer,latitude:float,longitude:float,\
   timestamp:timestamp,meter_reading:float,meter_increment:float,ride_status:string,\
   passenger_count:integer] \

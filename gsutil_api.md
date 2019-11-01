@@ -22,7 +22,8 @@ gsutil
 	ls [gs://<url>/path/]
 	cat [gs://<url>/path/]
 	copy [-m] [-r] [...]  # -m: parallel
-	mb <gs://${BUCKET_NAME}>
+	mb [-c regional] [-l us-central1] <gs://${BUCKET_NAME}>
+	cp <gs://from> <local_path>
 	notification 
 		list
 		# -t: type, -f: format, -e: event
