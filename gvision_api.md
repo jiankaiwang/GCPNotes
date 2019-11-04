@@ -26,7 +26,11 @@
       },
       "features": [
         {
-          "type": "<the type for API calls>",
+          "type": "<the first type for API calls>",
+          "maxResults": 10
+        },
+        {
+          "type": "<the second type for API calls>",
           "maxResults": 10
         }
       ]
@@ -37,12 +41,15 @@
 
 * listing API types in request
 
-| Purposes                | API Type in Request  |
-| ----------------------- | -------------------- |
-| Label Detection         | `LABEL_DETECTION`    |
-| Web Detection           | `WEB_DETECTION`      |
-| Face and Land Detection | `LANDMARK_DETECTION` |
-
+| Purposes                | API Type in Request  | Description |
+| ----------------------- | -------------------- | --|
+| Label Detection         | `LABEL_DETECTION`    |Detect the label, object or content.|
+| Web Detection           | `WEB_DETECTION`      |Search the content for more information via the internet.|
+| Face and | `FACE_DETECTION` | Detect the faces and their emotions. |
+| Land Detection | `LANDMARK_DETECTION` |Detect the locations in the image.|
+| Logo detection | | Search common logos. |
+| Safe search detection | | Used for filtering the image by its content.  |
+| text detection || Run a OCR analysis to extract text from images. |
 
 
 ## Quick Note

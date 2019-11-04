@@ -34,7 +34,7 @@ Upload an image.
 
 ![](./static/sign.jpg)
 
-Set the permission for all users with read.
+Set the permission for all users with read (ENTITY: `Group`, ACCESS: `Reader`).
 
 
 

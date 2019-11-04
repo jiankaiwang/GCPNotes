@@ -25,3 +25,9 @@ TEXT_TWO="日本のグーグルのオフィスは、東京の六本木ヒルズ�
 curl "https://translation.googleapis.com/language/translate/v2/detect?key=${API_KEY}&q=${TEXT_ONE}&q=${TEXT_TWO}"
 ```
 
+* a request from a local file
+
+```sh
+curl -s -X POST -H "Content-Type: application/json" --data-binary @translation-request.json https://translation.googleapis.com/language/translate/v2?key=${API_KEY} -o translation-response.json
+```
+

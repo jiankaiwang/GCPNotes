@@ -47,7 +47,7 @@ Here we use Google Cloud Storage bucket. First we have to **create a bucket** (c
 
 After we created a bucket, we upload a image to the bucket.
 
-Next we have to edit the permission for all users that can read the image.
+Next we have to edit the permission for all users that can read the image (set `Group ` for option ENTITY and `Reader` for ACCESS.).
 
 
 

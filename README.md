@@ -48,7 +48,7 @@
     *   A Set of Cloud Functions
     *   Cloud Vision API
     *   Cloud Video Intelligence API
-*   [Cloud ML Engine: Qwik Start](Cloud_ML_Engine.md) (GSP076)
+*   [AI Platform: Qwik Start](Cloud_ML_Engine.md) (GSP076)
     *   Tensorflow
 *   [Predict Housing Prices with Tensorflow and AI Platform](housing_prices_tf_ai_platform.md) (GSP418)
 
