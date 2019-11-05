@@ -32,7 +32,6 @@
 ### Machine Learning / Deep Learning / Artificial Intelligence
 
 * [Introduction to APIs in Google](google_api.md) (GSP294)
-
 *   [Predict Taxi Fare with a BigQuery ML Forecasting Model](Predict_Taxi_Fare.md) (GSP246)
     *   Linear Model
 *   [Predict Visitor Purchases with a Classification Model in BQML](Predict_Visitor_Purchases.md) (GSP229)
@@ -43,6 +42,7 @@
     *   Multiple Language
 *   [Translate Text with the Cloud Translation API](Cloud_Translation.md) (GSP049)
 *   [Classify Text into Categories with the Natural Language API](Natural_Language.md) (GSP063)
+*   [Entity and Sentiment Analysis with the Natural Language API](entity_sentiment_nl.md) (GSP038)
 *   [Extract, Analyze, and Translate Text from Images with the Cloud ML APIs](Cloud_ML.md) (GSP075)
 *   [Scanning User-generated Content Using the Cloud Video Intelligence and Cloud Vision APIs](Cloud_Video_Vision.md) (GSP138)
     *   A Set of Cloud Functions
