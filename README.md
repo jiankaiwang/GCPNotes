@@ -37,6 +37,7 @@
 *   [Predict Visitor Purchases with a Classification Model in BQML](Predict_Visitor_Purchases.md) (GSP229)
     *   Logistic Regression
 *   [Detect Labels, Faces, and Landmarks in Images with the Cloud Vision API](Cloud_Vision_API.md) (GSP037)
+*   [Awwvision: Cloud Vision API from a Kubernetes Cluster](k8s_cluster_vision_api.md) (GSP066)
 *   [Google Cloud Speech API: Qwik Start](Cloud_Speech.md) (GSP119)
 *   [Speech to Text Transcription with the Cloud Speech API](Cloud_Speech_2.md) (GSP048)
     *   Multiple Language
