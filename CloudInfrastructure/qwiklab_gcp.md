@@ -47,9 +47,59 @@ balance the service traffic and provision security rules
 * Internet Security: SSL, etc.
 
 ### Stackdriver
+
+a suite of cloud monitoring, tracking logging and service reliability tools
+
+* Monitoring: Monitor app, network, engine, service log events.
+* Debugger: Debug your source code, you have to import GCP SDK first.
+* Trace: Compare to Monitoring, Trace focuses on tracking user's events on APP, Compute engines. (like URL tracking, web traffic, etc.)
+* Log Record
+* Error Reporting: Supervise the services hosted on GCP. If the services or engines go error, it would report the influence details, like how many people are influenced, how much time the services are out of work, etc.
+* Profiler: A suite of tools can help developers do the statistics about service performance from the scope of source code.
+
 ### Tools
+
+A suite of services helps developers manage or build developing pipelines.
+
+* Cloud Build (版本): Requires Cloud Build API.
+* Cloud Task (工作): Do asynchronous jobs (called tasks).
+* Container Registry
+* Cloud Scheduler
+* Cloud Identity Platform: Provide Custom IAM.
+* Cloud Source Repositories: Git repositories hosted on GCP.
+* Deployment Manager: Deploy multiple resources based on a simple `.yaml` file.
+* 私人目錄
+* Endpoints: Help developers manage APIs.
+
 ### Big Data
+
+a suite of services allows you to process and analyze large datasets
+
+* Composer: Manage Apache Airflow environment on GCP. (Requires Composer API)
+* Dataproc: Build Hadoop or Spark clusters and run data transformers on them. Basically, Dataproc supports the batch data pipeline.
+* Pub/Sub: It is an architecture for asynchronous streaming data. The subscriber consumes data which is from a topic and is sent by a publisher. (Requires Pub/Sub API)
+* Dataflow: A batch and streaming data processing pipeline.
+* BigQuery: A serverless data warehouse. It also supports SQL queries and basic ML model, so that users can easily do ETL on datasets and analyze them.
+* IoT Core: A fully managed service allows you to manage, connect and ingest data from a huge number of devices. It uses stand MQTT protocol. (Requires Google Cloud IoT API)
+* Data Catalog
+* Data Fusion: A tool helps users merge data (ETL) from different sources.
+* Cloud Healthcare API: The service allows users to access healthcare standards easier. 
+* Cloud Genomics: A service helps users manage and analyze genomics data.
+* Dataprep: It is a data transform service built on Trifacta, a Web UI tool.
+
 ### Artificial Intelligence
+
+A suite of services or APIs enables users to run specific artificial intelligence or machine learning tasks.
+
+* Google Cloud Data Labeling: Label various types of data, including images, videos, text, etc.
+* AI Platform (older name: ML Engine): A service allows users to run a complete ML or AI workflow from scratch.
+*  Natural Language
+* Vision
+* Video Intelligence
+* Translation
+* Talent Solution
+* Recommendations AI
+* AutoML Tables
 
 
 

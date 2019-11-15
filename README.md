@@ -31,6 +31,12 @@
 
 ### Machine Learning / Deep Learning / Artificial Intelligence
 
+A workflow shows how to do an End-to-End ML or AI works on the Google Cloud Platform.
+
+![](https://cloud.google.com/images/ai-platform/cloud-ai-platform.svg?hl=zh-tw)
+
+
+
 * [Introduction to APIs in Google](ML_DL_AI/google_api.md) (GSP294)
 *   [Predict Taxi Fare with a BigQuery ML Forecasting Model](ML_DL_AI/Predict_Taxi_Fare.md) (GSP246)
     *   Linear Model
