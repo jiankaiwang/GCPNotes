@@ -58,8 +58,9 @@ A workflow shows how to do an End-to-End ML or AI works on the Google Cloud Plat
 * [Classify Images of Clouds in the Cloud with AutoML Vision](ML_DL_AI/classify_image_automl_vision.md) (GSP223)
 * [Implementing an AI Chatbot with Dialogflow](ML_DL_AI/ai_chatbot_dialogflow.md) (GSP078)
 * [Machine Learning with TensorFlow](ML_DL_AI/ML_Tensorflow.md) (GSP273)
-    * Introduce using Tensorflow estimator API to build a linear classifier from scratch.
+    * Introduce using Tensorflow estim'ator API to build a linear classifier from scratch.
     * Introduce how to submit a job to the Google Cloud AI platform.
+* [TensorFlow for Poets](ML_DL_AI/tf_poets.md) (GSP077)
 *   [AI Platform: Qwik Start](ML_DL_AI/Cloud_ML_Engine.md) (GSP076)
     *   Tensorflow
 *   [Predict Housing Prices with Tensorflow and AI Platform](ML_DL_AI/housing_prices_tf_ai_platform.md) (GSP418)
