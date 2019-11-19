@@ -14,13 +14,13 @@ Create a datalab on a VM named mydatalabvm.
 
 ```sh
 gcloud compute zones list
-datalab create mydatalabvm --zone <ZONE>
+datalab create <mydatalabvm> --zone <ZONE>
 ```
 
 Reconnect the VM to recovery the datalab after stopping the VM.
 
 ```sh
-datalab connect mydatalabvm
+datalab connect <mydatalabvm>
 ```
 
 

@@ -22,6 +22,11 @@ bq [--project_id ${PROJECT_ID}]
     [--schema intelligent_content_bq_schema.json] \
     [--table ${DATASET_ID}.${TABLE_NAME}]
 	show <${DATASET_ID}.${TABLE_NAME}>
+	load [--source_format=CSV] [--skip_leading_rows=1] dbname.tablename
+	     gs://bucket_id/file.csv <colname>:string,<colname2>:string,<colname3>:string
+	query [--use_legacy_sql=false] 
+				[--destination_table=dbname.tablename] 
+				"$QUERY \`$TABLE\` $SUBSAMPLE"
 ```
 
 P.S.

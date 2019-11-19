@@ -64,6 +64,7 @@ A workflow shows how to do an End-to-End ML or AI works on the Google Cloud Plat
 *   [AI Platform: Qwik Start](ML_DL_AI/Cloud_ML_Engine.md) (GSP076)
     *   Tensorflow
 *   [Predict Housing Prices with Tensorflow and AI Platform](ML_DL_AI/housing_prices_tf_ai_platform.md) (GSP418)
+*   [Image Classification of Coastline Images Using TensorFlow on AI Platform](ML_DL_AI/img_cls_tf_aiplatform.md) (GSP014)
 
 
 

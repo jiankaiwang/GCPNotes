@@ -58,6 +58,8 @@ gcloud [-h]
     	create <web-map> [--default-service nginx-backend] # create url map
     target-http-proxies # create target http proxy to route requests to url map
     	create <http-ln-proxy> [--url-map web-map]
+    zones
+    	list
   components # list all components
   	list
   	update # update SDK installation
