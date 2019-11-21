@@ -2,6 +2,10 @@
 
 
 
+Keywords: `Cloud Vision API`, `Google APIs`, `Cloud Storage`
+
+
+
 ## Quick Notes
 
 Objective

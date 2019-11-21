@@ -9,6 +9,7 @@
 ### API Documents
 
 *   [BigQuery](api_doc/bq_api.md) (bq)
+    *   BigQuery Machine Learning (`BQML`)
 *   [Storage](api_doc/gsutil_api.md) (gsutil)
 *   [Google Cloud](api_doc/gcloud_api.md) (gcloud)
     *   Compute Engine (`gcloud compute`)
@@ -38,11 +39,17 @@ A workflow shows how to do an End-to-End ML or AI works on the Google Cloud Plat
 
 
 * [Introduction to APIs in Google](ML_DL_AI/google_api.md) (GSP294)
+    * Definition of (RESTful) `APIs` and `Endpoints`
+    * Introduction to `Google APIs`
 *   [Predict Taxi Fare with a BigQuery ML Forecasting Model](ML_DL_AI/Predict_Taxi_Fare.md) (GSP246)
-    *   Linear Model
+    *   Train and evaluate a linear model via `BQML` on a public `BigQuery` dataset.
+    *   Use a `BQML` built-in `regression` model.
 *   [Predict Visitor Purchases with a Classification Model in BQML](ML_DL_AI/Predict_Visitor_Purchases.md) (GSP229)
-    *   Logistic Regression
-*   [Detect Labels, Faces, and Landmarks in Images with the Cloud Vision API](ML_DL_AI/Cloud_Vision_API.md) (GSP037)
+    *   Train and evaluate a logistic regression model via `BQML` on a public `BigQuery` dataset.
+    *   Use a `BQML` built-in `classification` model.
+* [Detect Labels, Faces, and Landmarks in Images with the Cloud Vision API](ML_DL_AI/Cloud_Vision_API.md) (GSP037)
+    *   Use `curl` command to send a JSON request to `Cloud Vision API` and parse its response.
+    *   Use an image from a `cloud storage bucket` as the data source for a `Cloud Vision API` request.
 *   [Awwvision: Cloud Vision API from a Kubernetes Cluster](ML_DL_AI/k8s_cluster_vision_api.md) (GSP066)
 *   [Google Cloud Speech API: Qwik Start](ML_DL_AI/Cloud_Speech.md) (GSP119)
 *   [Speech to Text Transcription with the Cloud Speech API](ML_DL_AI/Cloud_Speech_2.md) (GSP048)

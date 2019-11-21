@@ -2,9 +2,15 @@
 
 
 
+keywords: `BigQuery`, `BQML`, `classification`, `ecommerce`
+
+
+
 ## Reference
 
-Ecommerce Dataset: https://www.en.advertisercommunity.com/t5/Articles/Introducing-the-Google-Analytics-Sample-Dataset-for-BigQuery/ba-p/1676331
+* Qwiklabs: [https://www.qwiklabs.com/focuses/1794?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3854283](https://www.qwiklabs.com/focuses/1794?catalog_rank={"rank"%3A1%2C"num_filters"%3A0%2C"has_search"%3Atrue}&parent=catalog&search_id=3854283)
+
+* Ecommerce Dataset: https://www.en.advertisercommunity.com/t5/Articles/Introducing-the-Google-Analytics-Sample-Dataset-for-BigQuery/ba-p/1676331
 
 
 
@@ -191,7 +197,7 @@ FROM
 
 ROC (Receiver Operating Characteristic) curve
 
-![](./static/roc.png)
+![](../static/roc.png)
 
 We use ROC curve to verify the performance of the ML classification model. In BQML, `roc_auc` is simply a queryable field when evaluating your trained ML model.
 

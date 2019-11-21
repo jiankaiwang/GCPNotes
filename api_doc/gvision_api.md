@@ -7,6 +7,7 @@
 
 
 * official API document: <https://cloud.google.com/vision/docs/?hl=zh-tw>
+* quick request doc: https://cloud.google.com/vision/docs/tutorials?hl=zh-tw
 
 
 
@@ -39,17 +40,20 @@
 }
 ```
 
-* listing API types in request
+* listing API types in curl request
 
 | Purposes                | API Type in Request  | Description |
 | ----------------------- | -------------------- | --|
 | Label Detection         | `LABEL_DETECTION`    |Detect the label, object or content.|
-| Web Detection           | `WEB_DETECTION`      |Search the content for more information via the internet.|
+| Web Detection           | `WEB_DETECTION`      |Search the content for more information via the internet like wikipedia or URL, etc.|
 | Face and | `FACE_DETECTION` | Detect the faces and their emotions. |
-| Land Detection | `LANDMARK_DETECTION` |Detect the locations in the image.|
+| Land Detection | `LANDMARK_DETECTION` |Detect the locations in an image.|
+| Object detection | `OBJECT_LOCALIZATION` |Detect objects in an image.|
 | Logo detection | | Search common logos. |
 | Safe search detection | | Used for filtering the image by its content.  |
 | text detection || Run a OCR analysis to extract text from images. |
+| text detection || More advanced results are in document-like structure. |
+| Crop Hints || Crop a part of a image as a optimized hint. |
 
 
 ## Quick Note

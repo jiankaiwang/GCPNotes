@@ -1,4 +1,14 @@
-# Predict Taxi Fare with a BigQuery ML Forecasting Model
+# Predict Taxi Fare with a BigQuery ML Forecasting Model (GSP246)
+
+
+
+Keywords: `BigQuey`, `BQML`
+
+
+
+## Reference
+
+* Qwiklabs: [https://www.qwiklabs.com/focuses/1797?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3854252](https://www.qwiklabs.com/focuses/1797?catalog_rank={"rank"%3A1%2C"num_filters"%3A0%2C"has_search"%3Atrue}&parent=catalog&search_id=3854252)
 
 
 
