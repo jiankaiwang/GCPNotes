@@ -27,10 +27,6 @@
 }
 ```
 
-
-
-## Quick Note
-
 * a general API call
 
 ```sh
@@ -38,3 +34,20 @@ export API_KEY=<API key fetched from google cloud console>
 curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json \
 "https://speech.googleapis.com/v1/speech:recognize?key=${API_KEY}"
 ```
+
+
+
+## Quick Note
+
+* Time Length: Differentiate the API calls by the time length of an audio file.
+
+| Types (Length) | Limits  | Call Methods             |
+| -------------- | ------- | ------------------------ |
+| Short          | < 1 min | Restful API, gRPC, Sync  |
+| Long           | > 1min  | Restful API, gRPC, Async |
+| Streaming      | -       | gRPC                     |
+
+
+
+
+

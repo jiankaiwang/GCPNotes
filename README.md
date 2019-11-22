@@ -12,18 +12,24 @@
     *   BigQuery Machine Learning (`BQML`)
 *   [Storage](api_doc/gsutil_api.md) (gsutil)
 *   [Google Cloud](api_doc/gcloud_api.md) (gcloud)
-    *   Compute Engine (`gcloud compute`)
+    *   Project (`gcloud projects`): config settings
+    *   Compute Engine (`gcloud compute`): firewall rules, backend services
     *   Pub/Sub (`gcloud pubsub`)
-    *   cloud function (`gcloud function`)
-    *   container (`gcloud container`)
+    *   Cloud function (`gcloud function`)
+    *   Container (`gcloud container`): K8s clsuters
     *   IAM (`gcloud iam`)
     *   IoT (`gcloud beta iot`)
 *   [Vision](api_doc/gvision_api.md) (Vision Annotation)
+    *   Restful API
 *   [Speech](api_doc/gspeech_api.md) (Speech to Text)
+    *   Restful API
 *   [Translation](api_doc/gtranslation_api.md) (Translation from one language to another)
+    *   Restful API
 *   [Natural Language](api_doc/gnl_api.md) (Classify text into categories)
+    *   Restful API
 *   [ML Engine](api_doc/gml_engine.md) (Deploy customized TF model via `gcloud ai-platform `.)
 *   [Video Intelligence](api_doc/gvideo_API.md)
+    *   Restful API
 *   [Datalab](api_doc/datalab_api.md) (datalab)
 
 
@@ -50,8 +56,11 @@ A workflow shows how to do an End-to-End ML or AI works on the Google Cloud Plat
 * [Detect Labels, Faces, and Landmarks in Images with the Cloud Vision API](ML_DL_AI/Cloud_Vision_API.md) (GSP037)
     *   Use `curl` command to send a JSON request to `Cloud Vision API` and parse its response.
     *   Use an image from a `cloud storage bucket` as the data source for a `Cloud Vision API` request.
-*   [Awwvision: Cloud Vision API from a Kubernetes Cluster](ML_DL_AI/k8s_cluster_vision_api.md) (GSP066)
-*   [Google Cloud Speech API: Qwik Start](ML_DL_AI/Cloud_Speech.md) (GSP119)
+* **[Awwvision: Cloud Vision API from a Kubernetes Cluster](ML_DL_AI/k8s_cluster_vision_api.md) (GSP066)**
+    *   Deploy and run multiple services on several `containers` of a `Kubernetes cluster` on a time.
+    * Create a worker for a web crawler and requests for `Vision API`, a web-app for viewing results and a cached database.
+* [Google Cloud Speech API: Qwik Start](ML_DL_AI/Cloud_Speech.md) (GSP119)
+    *   Use a `curl` command to request the `Speech API` for speech to text transformation.
 *   [Speech to Text Transcription with the Cloud Speech API](ML_DL_AI/Cloud_Speech_2.md) (GSP048)
     *   Multiple Language
 *   [Translate Text with the Cloud Translation API](ML_DL_AI/Cloud_Translation.md) (GSP049)

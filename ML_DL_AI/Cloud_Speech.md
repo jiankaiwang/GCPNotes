@@ -1,8 +1,19 @@
-# Google Cloud Speech API: Qwik Start
+# Google Cloud Speech API: Qwik Start (GSP119)
 
 
 
 The Speech API provides you to send audio and receive a text transcription from the service.
+
+
+
+keywords: `Speech API`, `Speech-to-Text`
+
+
+
+## Reference
+
+* Qwiklabs: [https://www.qwiklabs.com/focuses/588?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3863232](https://www.qwiklabs.com/focuses/588?catalog_rank={"rank"%3A1%2C"num_filters"%3A0%2C"has_search"%3Atrue}&parent=catalog&search_id=3863232)
+* API Reference: <https://cloud.google.com/speech-to-text/?hl=zh-tw>
 
 
 
@@ -13,8 +24,6 @@ Objective
 -   Create an API key
 -   Create a Speech API request
 -   Call the Speech API request
-
-API Reference: <https://cloud.google.com/speech-to-text/?hl=zh-tw>
 
 
 

@@ -2,9 +2,14 @@
 
 
 
+keywords: `kubernetes clsuters`, `vision API`, `container`, `web-app`
+
+
+
 ## Reference
 
 * Qwiklabs: https://www.qwiklabs.com/focuses/1241?parent=catalog
+* Cloud Vision sample on GCP: https://github.com/GoogleCloudPlatform/cloud-vision
 
 
 
@@ -12,7 +17,7 @@
 
 
 
-### Create a Kubernetes Engine cluste
+### Create a Kubernetes Engine cluster
 
 ```sh
 # setup zone
