@@ -1,18 +1,20 @@
-# Classify Text into Categories with the Natural Language API
+# Classify Text into Categories with the Natural Language API (GSP063)
 
 
 
-## Quick Note
-
-### Reference
-
-BigQuery SQL: <https://cloud.google.com/bigquery/docs/reference/standard-sql/functions-and-operators>
-
-Data Studio with BigQuery: <https://cloud.google.com/bigquery/docs/visualize-data-studio>
+Keywords: `Natural Language API`, `BigQuery`, `Data Studio`, `Service Accounts`, `IAM`
 
 
 
-## Google Cloud Shell
+## Reference
+
+* Qwiklabs: https://google.qwiklabs.com/focuses/1749?parent=catalog
+* NL Category list: https://cloud.google.com/natural-language/docs/categories
+* BBC Datasets: http://mlg.ucd.ie/datasets/bbc.html
+
+* BigQuery SQL: <https://cloud.google.com/bigquery/docs/reference/standard-sql/functions-and-operators>
+
+* Data Studio with BigQuery: <https://cloud.google.com/bigquery/docs/visualize-data-studio>
 
 
 

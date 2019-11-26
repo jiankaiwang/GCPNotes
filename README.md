@@ -62,9 +62,14 @@ A workflow shows how to do an End-to-End ML or AI works on the Google Cloud Plat
 * [Google Cloud Speech API: Qwik Start](ML_DL_AI/Cloud_Speech.md) (GSP119)
     *   Use a `curl` command to request the `Speech API` for speech to text transformation.
 *   [Speech to Text Transcription with the Cloud Speech API](ML_DL_AI/Cloud_Speech_2.md) (GSP048)
-    *   Multiple Language
-*   [Translate Text with the Cloud Translation API](ML_DL_AI/Cloud_Translation.md) (GSP049)
-*   [Classify Text into Categories with the Natural Language API](ML_DL_AI/Natural_Language.md) (GSP063)
+    *   Ask a Speech-to-Text translation request in a `restful API` (`Speech API`) format.
+    * Ask for doing translation over multiple languages.
+* [Translate Text with the Cloud Translation API](ML_DL_AI/Cloud_Translation.md) (GSP049)
+    *   Request restful `Translation API` calls for the language translation to a target language, or for detecting which the language of the sent text is.
+* **[Classify Text into Categories with the Natural Language API](ML_DL_AI/Natural_Language.md) (GSP063)**
+    *   Request a `Natural Language API` call for a categorical analysis on a text dataset (from BBC). 
+    * Save the result from requests into a `BigQuery` table and analyze it on `BigQuery`.
+    * Create a service account via `Cloud IAM` to allow python scripts to request `Natural Language API` and access to `BigQuery`.
 *   [Entity and Sentiment Analysis with the Natural Language API](ML_DL_AI/entity_sentiment_nl.md) (GSP038)
 *   [Extract, Analyze, and Translate Text from Images with the Cloud ML APIs](ML_DL_AI/Cloud_ML.md) (GSP075)
 *   [Scanning User-generated Content Using the Cloud Video Intelligence and Cloud Vision APIs](ML_DL_AI/Cloud_Video_Vision.md) (GSP138)

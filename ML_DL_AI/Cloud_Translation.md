@@ -1,4 +1,14 @@
-# Translate Text with the Cloud Translation API
+# Translate Text with the Cloud Translation API (GSP049)
+
+
+
+keywords: `Translation API`
+
+
+
+## Reference
+
+* Qwiklabs: https://google.qwiklabs.com/focuses/697?parent=catalog
 
 
 
@@ -7,10 +17,6 @@
 Reference:
 
 *   Google Translate API : <https://cloud.google.com/translate/docs/>
-
-
-
-## Google Cloud Shell
 
 
 

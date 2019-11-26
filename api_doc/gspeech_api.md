@@ -6,14 +6,14 @@
 
 
 
-* official API document: <https://cloud.google.com/speech-to-text/docs/?hl=zh-tw>>
+* official API document: <https://cloud.google.com/speech-to-text/docs/?hl=zh-tw>
 
 
 
 ## Request
 
 
-* a simple request (`request.json`) to API in json
+* a simple request (`request.json`) to API in json (**You have to know which of the language of the audio file is.**)
 
 ```json
 {
@@ -31,6 +31,8 @@
 
 ```sh
 export API_KEY=<API key fetched from google cloud console>
+
+# synchronous way
 curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json \
 "https://speech.googleapis.com/v1/speech:recognize?key=${API_KEY}"
 ```
@@ -41,11 +43,11 @@ curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json 
 
 * Time Length: Differentiate the API calls by the time length of an audio file.
 
-| Types (Length) | Limits  | Call Methods             |
-| -------------- | ------- | ------------------------ |
-| Short          | < 1 min | Restful API, gRPC, Sync  |
-| Long           | > 1min  | Restful API, gRPC, Async |
-| Streaming      | -       | gRPC                     |
+| Types (Length) | Limits       | Call Methods             |
+| -------------- | ------------ | ------------------------ |
+| Short          | < 1 min      | Restful API, gRPC, Sync  |
+| Long           | 1 ~ 480 mins | Restful API, gRPC, Async |
+| Streaming      | -            | gRPC                     |
 
 
 

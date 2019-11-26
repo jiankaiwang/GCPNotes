@@ -1,18 +1,14 @@
-# Speech to Text Transcription with the Cloud Speech API
+# Speech to Text Transcription with the Cloud Speech API (GSP048)
 
 
+
+keywords: `Speech API`, `Restful API`, `Translation`
 
 
 
 ## Quick Note
 
 Qwiklab Link: <https://google.qwiklabs.com/focuses/2187?parent=catalog>
-
-
-
-## Google Cloud Shell
-
-
 
 
 
