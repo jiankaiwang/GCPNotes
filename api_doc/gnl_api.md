@@ -31,7 +31,7 @@
 
 ## Quick Note
 
-* Classifying Text
+* Classifying Text (`classifyText`)
 
 ```sh
 export API_KEY=<API key fetched from google cloud console>
@@ -39,28 +39,28 @@ curl "https://language.googleapis.com/v1/documents:classifyText?key=${API_KEY}" 
   -s -X POST -H "Content-Type: application/json" --data-binary @request.json
 ```
 
-* Analyze Entities
+* Analyze Entities (`analyzeEntities`)
 
 ```sh
 curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=${API_KEY}" \
-  -s -X POST -H "Content-Type: application/json" --data-binary @nl-request.json
+  -s -X POST -H "Content-Type: application/json" --data-binary @request.json
 ```
 
-* Sentimental Analysis
+* Sentimental Analysis (`analyzeSentiment`)
 
 ```sh
 curl "https://language.googleapis.com/v1/documents:analyzeSentiment?key=${API_KEY}" \
   -s -X POST -H "Content-Type: application/json" --data-binary @request.json
 ```
 
-* Entity-Sentimental Analysis
+* Entity-Sentimental Analysis (`analyzeEntitySentiment`)
 
 ```sh
 curl "https://language.googleapis.com/v1/documents:analyzeEntitySentiment?key=${API_KEY}" \
   -s -X POST -H "Content-Type: application/json" --data-binary @request.json
 ```
 
-* Syntax / Parts of Speech
+* Syntax / Parts of Speech (`analyzeSyntax`)
 
 ```sh
 curl "https://language.googleapis.com/v1/documents:analyzeSyntax?key=${API_KEY}" \

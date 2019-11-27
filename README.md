@@ -70,7 +70,8 @@ A workflow shows how to do an End-to-End ML or AI works on the Google Cloud Plat
     *   Request a `Natural Language API` call for a categorical analysis on a text dataset (from BBC). 
     * Save the result from requests into a `BigQuery` table and analyze it on `BigQuery`.
     * Create a service account via `Cloud IAM` to allow python scripts to request `Natural Language API` and access to `BigQuery`.
-*   [Entity and Sentiment Analysis with the Natural Language API](ML_DL_AI/entity_sentiment_nl.md) (GSP038)
+* [Entity and Sentiment Analysis with the Natural Language API](ML_DL_AI/entity_sentiment_nl.md) (GSP038)
+    *   Create a request and send a sentence to `Natural language API` in order to do the `entity analysis`, `sentiment analysis`, `entity-sentiment analysis`, `syntax analysis` and `linguistic analysis`.
 *   [Extract, Analyze, and Translate Text from Images with the Cloud ML APIs](ML_DL_AI/Cloud_ML.md) (GSP075)
 *   [Scanning User-generated Content Using the Cloud Video Intelligence and Cloud Vision APIs](ML_DL_AI/Cloud_Video_Vision.md) (GSP138)
     *   A Set of Cloud Functions

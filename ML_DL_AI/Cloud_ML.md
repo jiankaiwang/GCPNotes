@@ -1,16 +1,15 @@
-# Extract, Analyze, and Translate Text from Images with the Cloud ML APIs (GSO075)
+# Extract, Analyze, and Translate Text from Images with the Cloud ML APIs (GSP075)
+
+
+
+## Reference
+
+* Qwiklabs: https://www.qwiklabs.com/focuses/1836?parent=catalog
+* Translation API supports 100+ languages, refer to https://cloud.google.com/translate/docs/languages.
 
 
 
 ## Quick Note
-
-### Reference
-
-The Translation API supports 100+ languages, refer to https://cloud.google.com/translate/docs/languages.
-
-
-
-## Google Cloud Shell
 
 
 
@@ -24,15 +23,13 @@ export API_KEY=AIzaSyBxNIzOzQGso_OJo7Uba81W6Xk2Ii5PSZI
 
 
 
-
-
 ## Upload an image to a cloud storage bucket
 
 Create a bucket named `jkw-image-bucket` from google storage.
 
 Upload an image.
 
-![](./static/sign.jpg)
+![](../static/sign.jpg)
 
 Set the permission for all users with read (ENTITY: `Group`, ACCESS: `Reader`).
 
