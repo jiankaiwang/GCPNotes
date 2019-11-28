@@ -8,6 +8,17 @@ This labs gives you a hands-on practice, end-to-end experience of training and p
 
 
 
+keywords: `ML Engine`, `AI Platform`
+
+
+
+## Reference
+
+* Qwiklabs: https://www.qwiklabs.com/focuses/581?parent=catalog
+* Source Code: https://github.com/GoogleCloudPlatform/cloudml-samples
+
+
+
 ## Quick Note
 
 *   Dataset: <https://archive.ics.uci.edu/ml/datasets/Census+Income>
@@ -20,10 +31,6 @@ This labs gives you a hands-on practice, end-to-end experience of training and p
     *   Deploy a model to support prediction.
     *   Request an online prediction and see the response.
     *   Request a batch prediction.
-
-
-
-## Google Cloud Shell
 
 
 

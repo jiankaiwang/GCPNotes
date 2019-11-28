@@ -2,10 +2,15 @@
 
 
 
+keywords: `Datalab`
+
+
+
 ## Reference
 
 * Qwiklabs: https://www.qwiklabs.com/focuses/3644?parent=catalog
 * Datalab on GCP Tutorial: https://cloud.google.com/datalab/docs/quickstart
+* Repository: https://github.com/vijaykyr/tensorflow_teaching_examples.git
 
 
 

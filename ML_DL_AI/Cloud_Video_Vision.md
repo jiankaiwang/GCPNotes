@@ -1,12 +1,20 @@
-# Scanning User-generated Content Using the Cloud Video Intelligence and Cloud Vision APIs
+# Scanning User-generated Content Using the Cloud Video Intelligence and Cloud Vision APIs (GSP138)
+
+
+
+keywords: `Vision API`, `Video Intelligence API`, `Cloud Storage`, `Cloud Functions`, `BigQuery`
+
+
+
+## Reference
+
+* qwiklabs: https://www.qwiklabs.com/focuses/1831?parent=catalog
+* gcloud beta functions deploy: <https://cloud.google.com/sdk/gcloud/reference/beta/functions/deploy>
+* gcloud function repository: https://github.com/GoogleCloudPlatform/cloud-functions-intelligentcontent-nodejs
 
 
 
 ## Quick Note
-
-### Reference
-
-gloud beta functions deploy: <https://cloud.google.com/sdk/gcloud/reference/beta/functions/deploy>
 
 
 
@@ -20,7 +28,7 @@ gloud beta functions deploy: <https://cloud.google.com/sdk/gcloud/reference/beta
 
 ### Architecture
 
-![](./static/video-image-api-arch.png)
+![](../static/video-image-api-arch.png)
 
 
 
@@ -306,6 +314,8 @@ exports.videoIntelligenceAPI = function videoIntelligenceAPI (event)
 }
 ```
 
+
+
 ### Deploy the `insertIntoBigQuery` function
 
 We will deploy `insertIntoBigQuery` CLoud Function, which contains the logic to receive a message with Cloud Pub/Sub and call the BigQuery API to insert the data into created BigQuery table.
@@ -340,6 +350,7 @@ exports.insertIntoBigQuery = function insertIntoBigQuery(event){
 ```
 
 
+
 ### Confirm that the Cloud Functions have been deployed
 
 ```sh
@@ -352,7 +363,7 @@ Verify that there are four cloud functions that have been created.
 
 ## Testing the Flow
 
-![](./static/gcloud-func-flow.png)
+![](../static/gcloud-func-flow.png)
 
 
 

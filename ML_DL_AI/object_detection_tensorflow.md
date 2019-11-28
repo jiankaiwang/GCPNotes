@@ -10,6 +10,10 @@ In this tutorial, the app is more like a webpage for interaction instead of a se
 
 
 
+keywords: `object detection API`, `Tensorflow`, `Webapp`
+
+
+
 ## Reference
 
 * Qwiklabs: https://www.qwiklabs.com/focuses/1823?parent=catalog

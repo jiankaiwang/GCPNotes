@@ -82,15 +82,19 @@ gcloud [-h]
   			[--num-nodes <num>] [--scopes <cloud-platform>] 
       get-credentials <CLUSTER-NAME>  		
       delete <CLUSTER-NAME> # delete a k8s cluster
-	pubsub # for Pub/Sub
+	pubsub                               # for Pub/Sub
 		topics 
-			create
+			create <topic-name>
 			list
-			publish <topic-name> [--attribute=data=Hello] # {"message":"","data":"Hello"}
+			publish <topic-name> 
+			        [--attribute=data=Hello] # receive {"message":"","data":"Hello"}
 		subscriptions 
-			create <subscription-name> [--topic=to-kafka] [--topic-project=$PROJECT_ID]
-			pull <subscription-name> [--auto-ack] [--limit <number>]
-	functions # for cloud functions
+			create <subscription-name> 
+			       [--topic=to-kafka] 
+			       [--topic-project=$PROJECT_ID]
+			pull <subscription-name> 
+			     [--auto-ack] [--limit <number>]
+	functions                                            # for cloud functions
 		deploy <function-name> 
 			[--allow-unauthenticated \] 
 			[--stage-bucket gs://${STAGING_BUCKET_NAME} \] 
@@ -103,10 +107,13 @@ gcloud [-h]
 		delete <function-name>
 	iam 
 		service-accounts
-			create <my-account> --display-name <my-account> # create a sevice count
-			keys create <key.json> [--iam-account=my-account@$PROJECT.iam.gserviceaccount.com]
+			create <my-account>                              # create a sevice count
+			       --display-name <my-account> 
+			keys 
+				create <key.json>                              # create an auth. key.
+				       [--iam-account=my-account@$PROJECT.iam.gserviceaccount.com]
 	projects 
-		add-iam-policy-binding $PROJECT \
+		add-iam-policy-binding $PROJECT \                  # add rules for services via IAM
 			[--member=serviceAccount:my-account@$PROJECT.iam.gserviceaccount.com] \
 			[--role=roles/bigquery.admin]
 ```

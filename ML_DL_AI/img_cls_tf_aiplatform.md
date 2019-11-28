@@ -6,6 +6,10 @@ This tutorial shows how to start a Datalab instance. A Datalab instance is like 
 
 
 
+keywords: `Datalab`
+
+
+
 ## Reference
 
 * Qwiklabs: https://www.qwiklabs.com/focuses/1048?parent=catalog

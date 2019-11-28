@@ -2,6 +2,10 @@
 
 
 
+keywords: `AutoML`, `Training`, `Inference`, `Deployment`
+
+
+
 ## Reference
 
 * Qwiklabs: https://www.qwiklabs.com/focuses/8406?parent=catalog

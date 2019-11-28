@@ -2,6 +2,10 @@
 
 
 
+Keywords: `Vision API`, `OCR`, `Translation API`, `Natural Language API`
+
+
+
 ## Reference
 
 * Qwiklabs: https://www.qwiklabs.com/focuses/1836?parent=catalog

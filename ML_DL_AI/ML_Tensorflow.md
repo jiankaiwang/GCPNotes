@@ -2,6 +2,10 @@
 
 
 
+Keywords: `Tensorflow`, `Estimator API`, `AI Platform`
+
+
+
 ## Reference
 
 * Qwiklabs: https://www.qwiklabs.com/focuses/3391?parent=catalog
@@ -218,9 +222,9 @@ def serving_input_fn():
     feature_placeholders = {
       key : tf.placeholder(tf.float32, [None]) for key in real.keys()
     }
-    feature_placeholders.update( {
+    feature_placeholders.update({
       key : tf.placeholder(tf.string, [None]) for key in sparse.keys()
-    } )
+    })
 
     features = {
       # tf.expand_dims will insert a dimension 1 into tensor shape

@@ -4,6 +4,10 @@ In this tutorial, use transfer learning to speed up the training time. Transfer 
 
 
 
+keywords: `Transfer learning`, `Retrain`
+
+
+
 ## Reference
 
 * Qwiklabs: https://www.qwiklabs.com/focuses/1095?parent=catalog
