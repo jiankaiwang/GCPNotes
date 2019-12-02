@@ -26,9 +26,9 @@ Quick api reference used the environment variables in some cases.
 
 ```sh
 gcloud 
-	ai-platform 
-		local 
-			train \  # run a local training task
+  ai-platform 
+    local 
+      train \  # run a local training task
         --module-name trainer.task \  # main entry
         --package-path trainer/ \  # the training package
         --job-dir $MODEL_DIR \
@@ -37,13 +37,13 @@ gcloud
         --train-steps 1000 \
         --eval-steps 100 \
         --verbosity DEBUG
-			predict \  # run a local prediction task
-				--model-dir output/export/census/1559272937 \
-				--json-instances $TEST_DATA  # the test data
-		jobs 
-			submit 
-				training $JOB_NAME \ # submit a training job to the ml engine (on the cloud)
-    			--job-dir $OUTPUT_PATH \
+      predict \  # run a local prediction task
+        --model-dir output/export/census/1559272937 \
+        --json-instances $TEST_DATA  # the test data
+    jobs 
+      submit 
+        training $JOB_NAME \ # submit a training job to the ml engine (on the cloud)
+          --job-dir $OUTPUT_PATH \
           --runtime-version 1.10 \
           --module-name trainer.task \
           --package-path trainer/ \
@@ -55,18 +55,18 @@ gcloud
           --verbosity DEBUG \
           [--scale-tier=STANDARD_1|BASIC_GPU] # for distributed computing
           [--config config.yaml] # for distributed computing requested by yaml
-       	stream-logs $JOB_NAME
-		models 
-			create $MODEL_NAME --regions=$REGION # create a model for prediction
-			list
-		versions 
-			create v1 \  # v1 is the version control you can create
+         stream-logs $JOB_NAME
+    models 
+      create $MODEL_NAME --regions=$REGION # create a model for prediction
+      list
+    versions 
+      create v1 \  # v1 is the version control you can create
         --model $MODEL_NAME \
         --origin $MODEL_BINARIES \
         --runtime-version 1.10
     predict \
-			--model $MODEL_NAME \
-			--version v1 \  # selected the api ready to use
-			--json-instances $TEST_DATA
+      --model $MODEL_NAME \
+      --version v1 \  # selected the api ready to use
+      --json-instances $TEST_DATA
 ```
 

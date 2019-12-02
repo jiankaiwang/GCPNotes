@@ -15,21 +15,21 @@ export TABLE_NAME=filtered_content
 
 ```sh
 bq [--project_id ${PROJECT_ID}]                      # project_id is required
-	mk [--time_partitioning_field timestamp] \         # create a dataset
-    [--schema ride_id:string,point_idx:integer,latitude:float,longitude:float,\
+  mk [--time_partitioning_field timestamp] \         # create a dataset
+     [--schema ride_id:string,point_idx:integer,latitude:float,longitude:float,\
   timestamp:timestamp,meter_reading:float,meter_increment:float,ride_status:string,\
   passenger_count:integer] \
     [--schema intelligent_content_bq_schema.json] \
     [--table ${DATASET_ID}.${TABLE_NAME}]
-	show <${DATASET_ID}.${TABLE_NAME}>
-	load [--source_format=CSV]                         # load csv file into bigquery table
-	     [--skip_leading_rows=1] 
-	     dbname.tablename
-	     gs://bucket_id/file.csv 
-	     <colname>:string,<colname2>:string,<colname3>:string
-	query [--use_legacy_sql=false] 
-				[--destination_table=dbname.tablename] 
-				"$QUERY \`$TABLE\` $SUBSAMPLE"
+  show <${DATASET_ID}.${TABLE_NAME}>
+  load [--source_format=CSV]                         # load csv file into bigquery table
+       [--skip_leading_rows=1] 
+       dbname.tablename
+       gs://bucket_id/file.csv 
+       <colname>:string,<colname2>:string,<colname3>:string
+  query [--use_legacy_sql=false] 
+        [--destination_table=dbname.tablename] 
+        "$QUERY \`$TABLE\` $SUBSAMPLE"
 ```
 
 P.S.
@@ -79,9 +79,9 @@ Predict the result via the trained model.
 
 ```sql
 SELECT
-	*
+  *
 FROM
-	ml.PREDICT(MODEL `ecommerce.classification_model_2`, ... );
+  ml.PREDICT(MODEL `ecommerce.classification_model_2`, ... );
 ```
 
 

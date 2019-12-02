@@ -96,8 +96,8 @@ A workflow shows how to do an End-to-End ML or AI works on the Google Cloud Plat
 * [Creating an Object Detection Application Using TensorFlow](ML_DL_AI/object_detection_tensorflow.md) (GSP141)
     * Train an `object detection` model or fetch a pre-train model via `object detection API`
     * Establish a `web app` allowing a request for object detection using the above model.
-*   **[AI Platform: Qwik Start](ML_DL_AI/Cloud_ML_Engine.md) (GSP076)** :star:
-  *   Use a structured dataset as an example to demonstrate a complete flow of machine learning on the local and furtherly submit the job to the `AI platform`.
+* **[AI Platform: Qwik Start](ML_DL_AI/Cloud_ML_Engine.md) (GSP076)** :star:
+    *   Use a structured dataset as an example to demonstrate a complete flow of machine learning on the local and furtherly submit the job to the `AI platform`.
 * [Predict Housing Prices with Tensorflow and AI Platform](ML_DL_AI/housing_prices_tf_ai_platform.md) (GSP418)
     * Perform how to start a `Datalab` and run a Python notebook on it.
 * [Image Classification of Coastline Images Using TensorFlow on AI Platform](ML_DL_AI/img_cls_tf_aiplatform.md) (GSP014)
