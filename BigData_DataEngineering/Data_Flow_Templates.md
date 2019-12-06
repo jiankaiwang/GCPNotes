@@ -2,9 +2,17 @@
 
 
 
+keywords: `Dataflow`, `BigQuery`, `Storage`
+
+
+
+## Reference
+
+* Qwiklabs: https://www.qwiklabs.com/focuses/1101?parent=catalog
+
+
+
 ## QuickNote
-
-
 
 
 
@@ -39,6 +47,8 @@ gsutil mb gs://$BUCKET_NAME/
 
 
 
+Here we use a pre-defined template to start our new job.
+
 
 
 ## Run the Pipeline
@@ -46,17 +56,17 @@ gsutil mb gs://$BUCKET_NAME/
 Steps:
 
 *   From the`Navigation menu` find Big Data section and click `Dataflow` service.
-
 *   Click `+ CREATE JOB FROM TEMPLATE` on the top of the window.
 *   Tyope a job name for the Dataflow job, e.g. `qwik-dataflow-jkw`.
 *   Under `Cloud Dataflow temnplate` select `Cloud Pub/Sub Topic to BigQuery`.
-
 *   Under `Cloud Pub/Sub input topic`, type `projects/pubsub-public-data/topics/taxirides-realtime`.
 *   Under `BigQuery output table`, type `<myprojectid>:taxirides.realtime`, e.g. `qwiklabs-gcp-5944dcec93ab1113:taxirides.realtime`.
-
 *   Under `Temporary location`, type `gs://Your_Bucket_Name/temp`, e.g. `gs://qwik_jkw_bucket/temp`.
-
 *   Click `RUN`.
+
+
+
+![](https://cdn.qwiklabs.com/kJiAXaVD5HH1IYxC0CWj%2BmR%2B9CqSFNJm3aDa%2Fm%2FEIco%3D)
 
 
 

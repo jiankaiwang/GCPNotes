@@ -15,12 +15,12 @@ export TABLE_NAME=filtered_content
 
 ```sh
 bq [--project_id ${PROJECT_ID}]                      # project_id is required
-  mk [--time_partitioning_field timestamp] \         # create a dataset
+  mk [--time_partitioning_field timestamp] \         # create a dataset or a table
      [--schema ride_id:string,point_idx:integer,latitude:float,longitude:float,\
   timestamp:timestamp,meter_reading:float,meter_increment:float,ride_status:string,\
   passenger_count:integer] \
     [--schema intelligent_content_bq_schema.json] \
-    [--table ${DATASET_ID}.${TABLE_NAME}]
+    [--table ${DATASET_ID}.${TABLE_NAME}]            # -t db.table is to create a table
   show <${DATASET_ID}.${TABLE_NAME}>
   load [--source_format=CSV]                         # load csv file into bigquery table
        [--skip_leading_rows=1] 

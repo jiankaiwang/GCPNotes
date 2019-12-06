@@ -1,10 +1,19 @@
 # Dataproc: Qwik Start - Console (GSP103)
 
-<https://google.qwiklabs.com/focuses/586?parent=catalog>
+
+
+Cloud Dataproc is a fast, easy-to-use, fully-managed cloud service for running Apache Spark, Apache Hadoop clusters. It is convenient for customers to create a Google Cloud Dataproc cluster, resize or modify the number of workers in it.
 
 
 
-Cloud Dataproc is a fast, easy-to-use, fully-managed cloud service for running Apache Spark, Apache Hadoop clusters. It is convenient for customers to create a Google Cloud Dataproc cluster, resize or modify the number of worker in it.
+keywords: `Dataproc`, `Spark`
+
+
+
+## Reference
+
+* Qwiklabs: <https://google.qwiklabs.com/focuses/586?parent=catalog>
+* Submit a custom task example: https://cloud.google.com/dataproc/docs/guides/submit-job
 
 
 
@@ -12,9 +21,7 @@ Cloud Dataproc is a fast, easy-to-use, fully-managed cloud service for running A
 
 
 
-
-
-## Confirm Cloud Dataproc API is enabled
+### Confirm Cloud Dataproc API is enabled
 
 Steps:
 
@@ -24,7 +31,7 @@ Steps:
 
 
 
-## Create a cluster
+### Create a cluster
 
 Steps:
 
@@ -42,7 +49,7 @@ Steps:
 
 
 
-## Submit a job
+### Submit a job
 
 Steps:
 
@@ -64,13 +71,13 @@ Steps:
 
 
 
-## View the job output
+### View the job output
 
 You should see the output like `Pi is roughly 3.1416735514167353` or `Pi is roughly 3.1416830714168307` in the Output window.
 
 
 
-### Update a cluster
+#### Update a cluster
 
 The following shows how to change the number of worker instances in the cluster.
 

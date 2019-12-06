@@ -77,8 +77,8 @@ A workflow shows how to do an End-to-End ML or AI works on the Google Cloud Plat
 * [Entity and Sentiment Analysis with the Natural Language API](ML_DL_AI/entity_sentiment_nl.md) (GSP038)
   
     *   Create a request and send a sentence to `Natural language API` in order to do the `entity analysis`, `sentiment analysis`, `entity-sentiment analysis`, `syntax analysis` and `linguistic analysis`.
-*   **[Extract, Analyze, and Translate Text from Images with the Cloud ML APIs](ML_DL_AI/Cloud_ML.md) (GSP075)** :star:
-* Request a number of `machine learning restful APIs` orderly. 
+* **[Extract, Analyze, and Translate Text from Images with the Cloud ML APIs](ML_DL_AI/Cloud_ML.md) (GSP075)** :star:
+    * Request a number of `machine learning restful APIs` orderly. 
     * Firstly request a `Vision API` call for text detection with OCR to an image, secondly request a `Translation API` call for detecting language and translating it from the text, thirdly request a `Natural Language API` call for the entity analysis from the translation result.
 *   **[Scanning User-generated Content Using the Cloud Video Intelligence and Cloud Vision APIs](ML_DL_AI/Cloud_Video_Vision.md) (GSP138)** :star:
     * An example scenario firstly an image is uploaded to `cloud storage bucket` triggering a notification to `Cloud Pub/Sub` that then triggers cloud function, secondly cloud functions would request both `Vision API` and `Video Intelligence API` calls, and after the responses from APIs are received the result would be written into `BigQery` table. In the final, you can analyze the data in the `BigQuery`.
@@ -108,7 +108,7 @@ A workflow shows how to do an End-to-End ML or AI works on the Google Cloud Plat
 ### Big Data / Data Engineering
 
 ```text
-Dataprep: Data Transformation Pipeline
+Dataprep: Data Transformation Pipeline via Trifacta
    ｜
 Dataflow: Batch or Streaming Data Processing Pipeline
    ｜
@@ -116,12 +116,19 @@ Dataproc: Hadoop or Spark Computing Core
 ```
 
 *   [Dataprep: Qwik Start](BigData_DataEngineering/Data_Prep.md) (GSP105)
-*   [Dataprep: Creating a Data Transformation Pipeline with Cloud Dataprep](BigData_DataEngineering/Data_Prep_Pipeline.md) (GSP430)
+    *   This tutorial helps you preprocess datasets on `Dataprep` that is actually a data wrangling tool named `Trifacta`.
+*   **[Dataprep: Creating a Data Transformation Pipeline with Cloud Dataprep](BigData_DataEngineering/Data_Prep_Pipeline.md) (GSP430)** :star:
+    *   This tutorial guides you to use the `Dataprep` module (actually is `Trifacta`) preprocessing a `BigQuery` table and then exporting the processed results back into a new table in `BigQuery`.
 *   [Dataflow: Qwik Start - Templates](BigData_DataEngineering/Data_Flow_Templates.md) (GSP192)
-*   [Dataflow: Qwik Start - Python](BigData_DataEngineering/Data_Flow_Python.md) (GSP207)
+    *   This tutorial guides you to use a template in `Dataflow` to process the dataset in `BigQuery` and to insert the processed data into a new table in `BigQuery`.
+*   **[Dataflow: Qwik Start - Python](BigData_DataEngineering/Data_Flow_Python.md) (GSP207)** :star:
+    *   This tutorial guides you to run a `Python` script on `Dataflow`, it processes the dataset on a `bucket` and then exports the result on the `bucket`. 
 *   [Dataflow: Run a Big Data Text Processing Pipeline in Cloud Dataflow](BigData_DataEngineering/Data_Flow_Pipeline.md) (GSP047)
+    *   This tutorial guides you to run a processing task on `Dataflow` using a given Maven project.
 *   [Dataproc: Qwik Start - Console](BigData_DataEngineering/data_proc_console.md) (GSP103)
+    *   This tutorial guides you to use `Dataproc`, that is a cloud service for `Hadoop` or `Spark`, and to submit a job running on it.
 *   [Dataproc: Qwik Start - Command Line](BigData_DataEngineering/data_proc_cli.md) (GSP104)
+    *   This tutorial guides you to use the shell commands operating a cluster on `Dataproc` and submitting a job running on it.
 *   [Cloud IoT Core: Building an IoT Analytics Pipeline on Google Cloud Platform](BigData_DataEngineering/cloud_iot_core.md) (GSP088)
 *   [Cloud Pub/Sub: Streaming IoT Kafka to Google Cloud Pub/Sub](BigData_DataEngineering/iot_kafka_pub_sub.md) (GSP285)
 *   [ETL Processing on GCP Using Dataflow and BigQuery](BigData_DataEngineering/etl_gcp_dataflow_bigquery.md) (GSP290)

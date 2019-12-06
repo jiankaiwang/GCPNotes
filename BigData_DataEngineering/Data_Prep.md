@@ -1,12 +1,15 @@
-# Dataprep: Qwik Start
+# Dataprep: Qwik Start (GSP105)
+
+
+
+keywords: `Dataprep`, `Trifacta`
 
 
 
 ## QuickNote
 
-Bucket name requirements
-
-*   <https://cloud.google.com/storage/docs/bucket-naming#requirements>
+* Bucket name requirements: https://cloud.google.com/storage/docs/bucket-naming#requirements
+* Qwiklabs: https://google.qwiklabs.com/focuses/584?parent=catalog
 
 
 

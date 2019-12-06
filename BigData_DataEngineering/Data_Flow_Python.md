@@ -2,27 +2,29 @@
 
 
 
+keywords: `Python`, `Dataflow`, `Storage`
+
+
+
+## Reference
+
+* Apache Beam: <https://github.com/apache/beam>
+* Qwiklabs: https://www.qwiklabs.com/focuses/1100?parent=catalog
+
+
+
 ## Quick Note
 
-Apache Beam: <https://github.com/apache/beam>
 
 
-
-## Start Cloud Shell
-
-
-
-
-
-## Create a Cloud Storage bucket
-
-
-### Create a bucket
+#### Create a bucket
 
 
 Create a storage bucket called `qwik-bucket-jkw`.
 
-### Install pip and cloud dataflow sdk
+
+
+#### Install pip and cloud dataflow sdk
 
 Update pip and virtualen, create a virtual env under python2.7 and activate the virtualenv.
 
@@ -41,15 +43,19 @@ Inside virtualenv and install the latest version of Apache Beam.
 pip install apache-beam[gcp]
 ```
 
-### Run the `wordcount.py` example locally.
+
+
+#### Run the `wordcount.py` example locally.
 
 ```sh
 python -m apache_beam.examples.wordcount --output OUTPUT_FILE
 ```
 
-**Cloud Dataflow is a distribution of Apache Beam.**
+> Cloud Dataflow is a distribution of Apache Beam.
 
-### Run an Example Pipeline Remotely
+
+
+#### Run an Example Pipeline Remotely
 
 Set the `BUCKET` environment variable to the bucket.
 
@@ -71,7 +77,7 @@ python -m apache_beam.examples.wordcount --project $DEVSHELL_PROJECT_ID \
 
 
 
-## Check that your job succeeded
+### Check that your job succeeded
 
 Steps:
 

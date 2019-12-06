@@ -116,5 +116,15 @@ gcloud [-h]
     add-iam-policy-binding $PROJECT \                  # add rules for services via IAM
       [--member=serviceAccount:my-account@$PROJECT.iam.gserviceaccount.com] \
       [--role=roles/bigquery.admin]
+  dataproc
+    cluster
+      create <cluster-name>                            # create a dataproc clsuter
+      update <clsuter-name>                            # update the config of the cluster
+        --num_workers <num>
+    jobs <job-name>                                    # create a datapro job
+      --cluster <cluster-name> 
+      --class org.apache.spark.examples.SparkPi 
+      --jars file:///usr/lib/spark/examples/jars/spark-examples.jar 
+      -- 1000
 ```
 
