@@ -1,10 +1,11 @@
 #ETL Processing on GCP Using Dataflow and BigQuery (GSP290)
 
-
+keywords: `ETL`, `Dataflow`, `BigQuery`
 
 ## Reference
 
-* https://www.qwiklabs.com/focuses/3460?parent=catalog
+* Qwiklabs: https://www.qwiklabs.com/focuses/3460?parent=catalog
+* Git Repository: https://github.com/GoogleCloudPlatform/professional-services.git
 
 
 

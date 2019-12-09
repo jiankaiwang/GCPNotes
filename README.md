@@ -129,9 +129,16 @@ Dataproc: Hadoop or Spark Computing Core
     *   This tutorial guides you to use `Dataproc`, that is a cloud service for `Hadoop` or `Spark`, and to submit a job running on it.
 *   [Dataproc: Qwik Start - Command Line](BigData_DataEngineering/data_proc_cli.md) (GSP104)
     *   This tutorial guides you to use the shell commands operating a cluster on `Dataproc` and submitting a job running on it.
-*   [Cloud IoT Core: Building an IoT Analytics Pipeline on Google Cloud Platform](BigData_DataEngineering/cloud_iot_core.md) (GSP088)
+*   **[Cloud IoT Core: Building an IoT Analytics Pipeline on Google Cloud Platform](BigData_DataEngineering/cloud_iot_core.md) (GSP088)** :star:
+    * The tutorial shows you how to operate the Cloud IoT Core module as well as its components (registries and devices, the devices manager and the protocol bridge).
+    * The tutorial guides you integrating Cloud IoT Core with the Pub/Sub module, parsing the subscribed data with Dataflow, and at the end writing the data into BigQuery.
+
 *   [Cloud Pub/Sub: Streaming IoT Kafka to Google Cloud Pub/Sub](BigData_DataEngineering/iot_kafka_pub_sub.md) (GSP285)
-*   [ETL Processing on GCP Using Dataflow and BigQuery](BigData_DataEngineering/etl_gcp_dataflow_bigquery.md) (GSP290)
+    * The tutorial guides you to integrate two different kinds of streaming architectures, `Kafka` and `Pub/Sub`.
+    * The integrated architectures maybe not the best solution but can be used for various extensions of concatenated systems, for example, the `Cloud IoT Core` module.
+*   **[ETL Processing on GCP Using Dataflow and BigQuery](BigData_DataEngineering/etl_gcp_dataflow_bigquery.md) (GSP290)** :star:
+    * This tutorial guides you on how to use the `Dataflow` service to do a specific data processing task like ETL through running Python scripts on it.
+    * After that, you can assign the script for inserting processed data into a `BigQuery` table.
 
 
 

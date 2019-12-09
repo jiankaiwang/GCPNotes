@@ -1,13 +1,5 @@
 # Building an IoT Analytics Pipeline on Google Cloud Platform (GSP088)
 
-
-
-Reference link: https://www.qwiklabs.com/focuses/605?parent=catalog
-
-Keywords: `IoT`, `Cloud IoT Core`, `MQTT`
-
-
-
 The word `IoT`, internet of things, means the interconnection of physical devices with the global internet. These devices are equipped with sensors in different functions and networking hardware. They are identified globally. They receive the signal to afford rich data in the physical world.
 
 Cloud IoT Core is a service built on the standard message queue telemetry transport protocol (MQTT). It is consisted of two main components, device manager and protocol bridge.
@@ -16,22 +8,25 @@ Cloud IoT Core is a service built on the standard message queue telemetry transp
 * A `protocol bridge` is built upon MQTT protocol to allow devices to communicate with Cloud IoT Core.
 
 
-
-In this example, you will learn four main steps to establish the architecture via Cloud IoT Core.
-- Connect and Manage MQTT-based devices using Cloud IoT Core.
-- Publish and Ingest the message from Cloud IoT Core via Pub/Sub API.
+In this tutorial, you will learn four main steps to establish the architecture via Cloud IoT Core.
+- Connect and manage MQTT-based devices using Cloud IoT Core.
+- Publish and ingest the message from Cloud IoT Core via Pub/Sub API.
 - Process the data using Cloud Dataflow.
 - Analyze the data using BigQuery.
 
-
+Keywords: `IoT`, `Cloud IoT Core`, `MQTT`
 
 ## Reference
 
-* Url to Qwiklabs: <https://www.qwiklabs.com/focuses/605?parent=catalog>
+* Qwiklabs: https://www.qwiklabs.com/focuses/605?parent=catalog
+* Github Repository: http://github.com/GoogleCloudPlatform/training-data-analyst
 
 
+## Quick Notes
 
-## Create a Cloud Pub/Sub Topic
+![](../static/cloud_iot_dataflow_bigquery.png)
+
+### Create a Cloud Pub/Sub Topic
 
 Steps:
 
@@ -44,7 +39,7 @@ Click the dot bar on the end of topic. In the `View Permissions` and click `Add 
 
 
 
-## Create a BigQuery dataset
+### Create a BigQuery dataset
 
 * Create a BigQuery dataset and name it, for example `iotlabdataset`. 
 * After created a dataset, you now can create a table, named `sensordata`.
@@ -58,13 +53,13 @@ Click the dot bar on the end of topic. In the `View Permissions` and click `Add 
 
 
 
-## Create a Cloud Storage Bucket
+### Create a Cloud Storage Bucket
 
 Here we use `<GCP-Project-ID>-bucket` as the bucket name.
 
 
 
-## Set up a Cloud Dataflow Pipeline
+### Set up a Cloud Dataflow Pipeline
 
 * Here I am going to use the template in Dataflow. In the GCP Console > Dataflow, click `CREATE JOB FROM TEMPLATE`.
 * Name the job as `iotlabflow`.
@@ -77,7 +72,7 @@ Here we use `<GCP-Project-ID>-bucket` as the bucket name.
 
 
 
-## Prepare your compute engine VM
+### Prepare your compute engine VM
 
 Here we use VMs as the IoT devices.
 
@@ -106,7 +101,7 @@ git clone http://github.com/GoogleCloudPlatform/training-data-analyst
 
 
 
-## Create a registry for IoT devices 
+### Create a registry for IoT devices 
 
 ```sh
 export PROJECT_ID=<your-project-id>
@@ -121,7 +116,7 @@ gcloud beta iot registries create iotlab-registry \
 
 
 
-## Create a Cryptographic Keypair
+### Create a Cryptographic Keypair
 
 ```sh
 git clone http://github.com/GoogleCloudPlatform/training-data-analyst
@@ -132,7 +127,7 @@ openssl req -x509 -newkey rsa:2048 -keyout rsa_private.pem \
 
 
 
-## Add simulated devices to the registry
+### Add simulated devices to the registry
 
 Register the first IoT device.
 
@@ -156,7 +151,7 @@ gcloud beta iot devices create temp-sensor-istanbul \
 
 
 
-## Run simulated devices
+### Run simulated devices
 
 ```sh
 cd $HOME/training-data-analyst/quests/iotlab/
@@ -191,7 +186,7 @@ python cloudiot_mqtt_example_json.py \
 
 
 
-## Analyze the Sensor Data Using BigQuery
+### Analyze the Sensor Data Using BigQuery
 
 In the BigQuery, type the following sql command.
 
