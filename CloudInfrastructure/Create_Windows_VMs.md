@@ -1,12 +1,18 @@
 # Create a Windows Virtual Machine (GSP093)
 
+keywords: `windows`, `VM instance`
 
+## Reference
+
+* Qwiklabs: https://google.qwiklabs.com/focuses/560?parent=catalog
+
+## Quick Notes
 
 The steps creating Windows VMs are similar to those creating Unix-like VMs. The different step between them is requiring a remoted desktop tool (RDP). If your machine is running out of Windows, you can use a third tool like `Chrome RDP`.
 
 The overall steps are:
 
-*   We can create a Windows VM whose OS is **Windows Server** which can be selected via google cloud console. (`Navigation Menu` > `Compute Engine` > `VM intances`)
+*   We can create a Windows VM whose OS is **Windows Server** which can be selected via google cloud console. (`Navigation Menu` > `Compute Engine` > `VM intances` > `Boot disk`)
 
 *   Activate the cloud shell and type the following command to test the status of windows startup.
 

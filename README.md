@@ -146,12 +146,19 @@ Dataproc: Hadoop or Spark Computing Core
 
 The following courses are mainly related to `GCP Essentials` on qwiklabs.
 
-*   [A Tour of Qwiklabs and the Google Cloud Platform](CloudInfrastructure/qwiklab_gcp.md) (GSP282)
+*   **[A Tour of Qwiklabs and the Google Cloud Platform](CloudInfrastructure/qwiklab_gcp.md) (GSP282)** :star:
+    * Include a brief introduction of the `Google Cloud Platform` and the components as well.
 *   [Creating a Virtual Machine](CloudInfrastructure/Create_VMs.md) (GSP001)
+    * Introduce how to create a VM instance via the `Cloud Shell` or the `Cloud Platform Console`.
 *   [Compute Engine: Qwik Start - Windows](CloudInfrastructure/Create_Windows_VMs.md) (GSP093)
+    * Create a `Windows` VM instance via the `Cloud Shell` or the `Google Cloud Platform Console`.
 *   [Getting Started with Cloud Shell & gcloud](CloudInfrastructure/cloud_shell_gcloud.md) (GSP002)
+    * This tutorial introduces the `Cloud Shell` and `gcloud` commands.
 *   [Kubernetes Engine: Qwik Start](CloudInfrastructure/gke_start.md) (GSP100)
-*   [Set Up Network and HTTP Load Balancers](CloudInfrastructure/network_http_balancer.md) (GSP007)
+    * This tutorial guides you on how to operate a `Kubernetes` cluster via `gcloud` commands.
+*   **[Set Up Network and HTTP Load Balancers](CloudInfrastructure/network_http_balancer.md) (GSP007)** :star:
+    * This tutorial guides you on how to establish a network (L3) or HTTP/S (L7) load balancer.
+    * This tutorial demonstrates how to establish a cluster of web services through an `Instance Template` and the `Managed Instance Groups`.
 
 
 

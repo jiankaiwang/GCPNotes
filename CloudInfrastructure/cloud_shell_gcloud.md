@@ -1,16 +1,15 @@
 # Getting Started with Cloud Shell & gcloud (GSP002)
 
-
+keywords: `cloud shell`, `gcloud commands`
 
 ## Reference
 
-
-
+* Qwiklabs: https://google.qwiklabs.com/focuses/563?parent=catalog
 * Google Cloud SDK (`gcloud`): <https://cloud.google.com/sdk/docs/quickstarts?hl=zh-tw>
 
+## Quick Notes
 
-
-## Installing and Initializing gcloud
+### Installing and Initializing gcloud
 
 Surf the webpage (<https://cloud.google.com/sdk/docs/quickstarts?hl=zh-tw>) and download the sdk according to your machine.
 
@@ -41,7 +40,7 @@ Surf the webpage (<https://cloud.google.com/sdk/docs/quickstarts?hl=zh-tw>) and 
 ```
 
 
-## Setting up envicronment variables
+### Setting up envicronment variables
 
 ```sh
 export PROJECT_ID=<your_project_ID>
@@ -56,7 +55,7 @@ echo $ZONE
 
 
 
-## Create a VM via gcloud command
+### Create a VM via gcloud command
 
 ```sh
 gcloud compute instances create gcelab2 --machine-type n1-standard-2 --zone $ZONE
@@ -64,13 +63,13 @@ gcloud compute instances create gcelab2 --machine-type n1-standard-2 --zone $ZON
 
 
 
-## Using gcloud commands
+### Using gcloud commands
 
 Please refer to the [doc](gcloud_api.md).
 
 
 
-## Auto-Completion
+### Auto-Completion
 
 `gcloud interactive` has auto prompting for commands, like flags, sub-commands, etc.
 
@@ -90,7 +89,7 @@ Now you can use `tab` key to complete the command, like path, etc. When a dropdo
 
 
 
-## Connecting to the machine via SSH
+### Connecting to the machine via SSH
 
 ```sh
 gcloud compute ssh <instance-name> --zone <machine-zone>

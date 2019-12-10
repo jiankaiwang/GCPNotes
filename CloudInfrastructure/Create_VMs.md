@@ -1,16 +1,15 @@
-# Create a Virtual Machine
+# Create a Virtual Machine (GSP001)
 
-
+keywords: `VM instance`, `cloud shell`
 
 ## Reference
 
+* Qwiklabs: https://google.qwiklabs.com/focuses/3563?parent=catalog
+* `gcloud` document: <https://cloud.google.com/sdk/gcloud>
 
+## Quick Notes
 
-*   `gcloud` document: <https://cloud.google.com/sdk/gcloud>
-
-
-
-## Step
+### Step
 
 
 
@@ -30,7 +29,7 @@ All GCP resources are allocated based on `regions` and `zones`. A region consist
 
 
 
-## Create a VM from Google Cloud Console
+### Create a VM from Google Cloud Console
 
 In the GCP console, on the top-left of the window, select `Navigation menu` > `Compute Engine` > `VM instance`.
 
@@ -54,7 +53,7 @@ After install the nginx server, back to gcp console, find the external IP and cl
 
 
 
-## Create a VM from Google Cloud Shell
+### Create a VM from Google Cloud Shell
 
 It is easy to create a VM via cloud shell. Activate the cloud shell on the top-right of the screen. Type the following command to create a VM.
 

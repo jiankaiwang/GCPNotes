@@ -1,34 +1,32 @@
 # Set Up Network and HTTP Load Balancers (GSP007)
 
 
-
 In this tutorial, we are going to setup two different types of load balancers, netowrk and http one.
 
+keywords: `load balancers`, `instance template`, `Managed Instance Groups`
 
 
 ## Reference
 
+* Qwiklabs: https://google.qwiklabs.com/focuses/558?parent=catalog
 * L3 [Network Load Balancer](https://cloud.google.com/compute/docs/load-balancing/network/)
 * L7 [HTTP(s) Load Balancer](https://cloud.google.com/compute/docs/load-balancing/http/)
 
 
+## Quick Notes
 
-## Setup gcloud region and zone
+### Setup gcloud region and zone
 
 ```sh
 gcloud config set compute/zone us-central1-a
 gcloud config set compute/region us-central1
 ```
 
+### Create multiple web server instances
 
+In GCP, you can setup multiple web server instances via `Instance Templates` and `Managed Instance Groups`. The Instance Templates define the look and the work to run on each virtual machine. The Managed Instance Groups use the template to instantiate a number of the VM instances.
 
-## Create multiple web server instances
-
-In GCP, you can setup multiple web server instances via `Instance Templates` and `Managed Instance Groups`. The Instance Templates define the look and the work to run on each virtual machine. The Managed Instance Groups use the template to instantiate the number of the VM instances.
-
-
-
-**Create a startup script.**
+* **Create a startup script.**
 
 ```sh
 cat << EOF > startup.sh
@@ -40,7 +38,7 @@ sed -i -- 's/nginx/Google Cloud Platform - '"\$HOSTNAME"'/' /var/www/html/index.
 EOF
 ```
 
-**Create an instance template using the startup script.**
+* **Create an instance template using the startup script.**
 
 ```sh
 gcloud compute instance-templates create nginx-template --metadata-from-file startup-script=startup.sh 
@@ -53,7 +51,7 @@ NAME            MACHINE_TYPE   PREEMPTIBLE  CREATION_TIMESTAMP
 nginx-template  n1-standard-1               2019-10-04T20:12:24.252-07:00
 ```
 
-**Create a target pool.** The target pool allows a single access to all instances and is necessary for load balacner in the future steps.
+* **Create a target pool.** The target pool allows a single access to all instances and is necessary for load balacner in the future steps.
 
 ```sh
 gcloud compute target-pools create nginx-pool
@@ -66,7 +64,7 @@ NAME        REGION       SESSION_AFFINITY  BACKUP  HEALTH_CHECKS
 nginx-pool  us-central1  NONE
 ```
 
-**Create a managed instance group.**
+* **Create a managed instance group.**
 
 ```sh
 gcloud compute instance-groups managed create nginx-group \
@@ -97,7 +95,7 @@ nginx-7rbk  us-central1-a  n1-standard-1               10.128.0.2   35.192.186.3
 nginx-qtdn  us-central1-a  n1-standard-1               10.128.0.3   104.198.134.199  RUNNING
 ```
 
-**Create a firewall rule to allow connecting to port 80 via external IP.**
+* **Create a firewall rule to allow connecting to port 80 via external IP.**
 
 ```sh
 gcloud compute firewall-rules create www-firewall --allow tcp:80
@@ -105,9 +103,9 @@ gcloud compute firewall-rules create www-firewall --allow tcp:80
 
 
 
-## Create a Network Load Balancer
+### Create a Network Load Balancer
 
-**Create a forwarding rules.**
+* **Create a forwarding rules.**
 
 ```sh
 gcloud compute forwarding-rules create nginx-lb \
@@ -116,7 +114,7 @@ gcloud compute forwarding-rules create nginx-lb \
          --target-pool nginx-pool
 ```
 
-**List all forwarding rules.**
+List all forwarding rules.
 
 ```sh
 gcloud compute forwarding-rules list
@@ -133,7 +131,7 @@ Now you can visit the load balancer via the IP address (http://X.X.X.X).
 
 
 
-## Create a HTTP(s) Load Balancer
+### Create a HTTP(s) Load Balancer
 
 We first **health-checks** on http environment to verify the instance is responding to HTTP or HTTPS traffic.
 

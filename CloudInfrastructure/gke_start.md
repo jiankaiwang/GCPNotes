@@ -1,8 +1,14 @@
 # Kubernetes Engine: Qwik Start (GSP100)
 
+keywords: `Kubernetes`, `k8s`
 
+## Reference
 
-## Set the default compute zone
+* Qwiklabs: https://google.qwiklabs.com/focuses/878?parent=catalog
+
+## Quick Notes
+
+### Set the default compute zone
 
 The compute zone is a location where the cluster and resource live. First, we need to setup the compute zone via cloud shell.
 
@@ -10,9 +16,7 @@ The compute zone is a location where the cluster and resource live. First, we ne
 gcloud config set compute/zone us-central1-a
 ```
 
-
-
-## Creating a Kubernetes Engine cluster
+### Creating a Kubernetes Engine cluster
 
 A cluster consists of at least one cluster master machine and multiple worker machines called workers. A worker is also called a node. A node is essentially a virtual machine instance that runs a Kubernetes process to make itself a part of the cluster.
 
@@ -31,7 +35,7 @@ my-cluster  us-central1-a  1.13.7-gke.24   35.188.16.204  n1-standard-1  1.13.7-
 
 
 
-## Get authentication credentials for the cluster
+### Get authentication credentials for the cluster
 
 After creating a cluster, you have to get authentication credentials to interact with it. 
 
@@ -41,7 +45,7 @@ gcloud container clusters get-credentials <CLUSTER-NAME>
 
 
 
-## Deploying an application to the cluster
+### Deploying an application to the cluster
 
 Now you have already created a cluster, you can deploy a containerized application on it.
 
@@ -63,7 +67,7 @@ kubectl get service hello-server
 
 
 
-## Clean up
+### Clean up
 
 You can type the below command to delete the cluster.
 
