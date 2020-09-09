@@ -78,10 +78,11 @@ gcloud [-h]
           --public-key path=rsa_cert.pem,type=rs256
   container 
     clusters 
-      create <CLUSTER-NAME> \ # create a k8s cluster
-        [--num-nodes <num>] [--scopes <cloud-platform>] 
-      get-credentials <CLUSTER-NAME>      
-      delete <CLUSTER-NAME> # delete a k8s cluster
+      create <CLUSTER-NAME> \          # create a k8s cluster
+        [--num-nodes <num>] 
+        [--scopes <cloud-platform>] 
+      get-credentials <CLUSTER-NAME>   # get credentials to interact
+      delete <CLUSTER-NAME>            # delete a k8s cluster
   pubsub                               # for Pub/Sub
     topics 
       create <topic-name>
