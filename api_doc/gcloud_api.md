@@ -23,11 +23,14 @@ gcloud [-h]
       compute/zone <zone_name>
     get-value # get the value of the parameter to the config 
       project
+      account
   compute
-    instances # related to VM instances
-      create <instance-name> --machine-type <n1-standard-2> --zone <zone-id>
+    instances                   # related to VM instances
+      create <instance-name>    # create a VM instance 
+        [--machine-type <n1-standard-2>] 
+        [--zone <zone-id>]
       describe <instance-name> --zone <machine-zone>
-      list 
+      list                      # list all compute instances
     ssh <instance-name> --zone <instance-zone> # connect with SSH
     project-info 
       describe --project <project-id>
@@ -43,7 +46,7 @@ gcloud [-h]
         set-named-ports <nginx-group> [--named-ports http:80] #map port for instance group
     firewall-rules 
       create <www-firewall> [--allow tcp:80] # create firewall rules
-     forwarding-rules 
+    forwarding-rules 
        create <nginx-lb> # create a (L3) network load balancer 
          [--region us-central1] [--ports=80] [--target-pool nginx-pool]
       list # list all forwaring rules, including load balancer's IP addr
@@ -81,8 +84,10 @@ gcloud [-h]
       create <CLUSTER-NAME> \          # create a k8s cluster
         [--num-nodes <num>] 
         [--scopes <cloud-platform>] 
+        [--machine-type <n1-standard-2>]
       get-credentials <CLUSTER-NAME>   # get credentials to interact
       delete <CLUSTER-NAME>            # delete a k8s cluster
+      list                             # list all k8s clusters
   pubsub                               # for Pub/Sub
     topics 
       create <topic-name>
@@ -127,5 +132,10 @@ gcloud [-h]
       --class org.apache.spark.examples.SparkPi 
       --jars file:///usr/lib/spark/examples/jars/spark-examples.jar 
       -- 1000
+  source                                               # the source git server
+    repos
+      create                                           # create a repo
+        <name>
+      list
 ```
 

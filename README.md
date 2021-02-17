@@ -166,7 +166,10 @@ The following courses are mainly related to `GCP Essentials` on qwiklabs.
 * [Introduction to Docker](docker_kubernetes/docker_basis.md) (GSP055)
     * This tutorial guides you on how to use Docker to run, build, push and delete the images and containers.
 * [Kubernetes Engine](docker_kubernetes/k8s_basis.md) (GSP100)
-
+    * This tutorial gudies you on how to use `gcloud` command to operate a k8s cluster on GCP.
+    * This tutorial gudies you on how to use `kubectl` command to manage the resources within a k8s cluster.
+* **[Orchestrating Kubernetes on the Cloud](docker_kubernetes/orchestrating_k8s.md) (GSP021)** :star:
+* **[Managing Deployments Using Kubernetes Engine](docker_kubernetes/managing_deployments_k8s.md) (GSP053)** :star:
 
 
 
