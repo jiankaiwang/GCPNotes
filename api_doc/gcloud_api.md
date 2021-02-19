@@ -14,14 +14,15 @@
 
 ```sh
 gcloud [-h]
-  auth # get authorized info
+  auth                          # get authorized info
     list
-  config # get project configure
+    application-default login   # get credentials
+  config                        # get project configure
     list [--all]
       project
-    set # set the resource configure
+    set                         # set the resource configure
       compute/zone <zone_name>
-    get-value # get the value of the parameter to the config 
+    get-value                   # get the value of the parameter to the config 
       project
       account
   compute
